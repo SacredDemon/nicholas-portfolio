@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+// import avatarImg from './avatar.png';
 import { 
   Github, Mail, Linkedin,
   Terminal, Layout, ArrowUpRight, 
@@ -173,7 +174,7 @@ export default function Portfolio() {
            <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-1000"></div>
               <img 
-                src="../public/avatar.png" 
+                src="/avatar.png" 
                 alt="Nicholas Kesene" 
                 className="relative w-24 h-24 rounded-full object-cover border-2 border-black bg-zinc-800"
               />
