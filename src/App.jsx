@@ -139,7 +139,7 @@ export default function Portfolio() {
       type: 'design',
       link: '#',
       isLive: false,
-      image: '/preview/Laundry.jpg' // <--- ADD YOUR IMAGE PATH HERE
+      image: '/preview/Laundry.webp' // <--- ADD YOUR IMAGE PATH HERE
     }
   ];
 
@@ -174,9 +174,10 @@ export default function Portfolio() {
            <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-1000"></div>
               <img 
-                src="/avatar.png" 
+                src="/avatar.webp" 
                 alt="Nicholas Kesene" 
                 className="relative w-24 h-24 rounded-full object-cover border-2 border-black bg-zinc-800"
+                loading="lazy"
               />
               <div className="absolute bottom-0 right-0 w-6 h-6 bg-emerald-500 border-4 border-black rounded-full" title="Online & Available"></div>
            </div>
@@ -329,6 +330,8 @@ export default function Portfolio() {
       src={project.image} 
       alt={project.title} 
       className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+      loading="lazy"
+      
     />
   ) : (
     <ProjectPlaceholder type={project.type} title={project.title} />
